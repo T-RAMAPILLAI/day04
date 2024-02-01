@@ -1,0 +1,24 @@
+palindrome anonymous:
+var palindrome=function(words){
+  var temp=[]
+  for(var i=0;i<words.length;i++){
+    var b=words[i].split("").reverse().join("")
+   if(words[i]===b){
+     temp.push(b)
+   }
+  }
+  return temp
+}
+console.log(palindrome(["rar","raj","ramar"]))
+
+palindrome IFFE
+(function(words) {
+  var temp = [];
+  for (var i = 0; i < words.length; i++) {
+    var b = words[i].split("").reverse().join("");
+    if (words[i] === b) {
+      temp.push(words[i]);
+    }
+  }
+  console.log(temp);
+})(["rar", "raj", "ramar"]);
